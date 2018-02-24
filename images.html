@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	body{
+		margin:0;
+		padding:0;
+	}
+	#main{
+		width:800px;
+		height:800px;	
+		margin:0 auto;
+		position:relative;		
+	}
+	#main>img{
+		position:absolute;
+		top:0;
+		opacity:0;
+		transition:all .5s linear;		
+	}
+	#main>img.show{
+		opacity:1;
+		z-index:10;
+	}
+  </style>
+ </head>
+ <body>
+  <div id="main">
+	<img src="image/2016-02/201602161128578567500.jpg" class="show">
+	<img src="image/2016-02/201602171658453567500.jpg">
+	<img src="image/2016-02/201602181359238880000.jpg">
+	<img src="image/2016-02/201602181726351067500.jpg">
+  </div>
+  <script>
+	function task(){
+		//查找id为main下的class为show的img
+		var img=document.querySelector("#main>.show");
+		//清除img的class	
+		img.className="";
+		//如果img的下一个元素不为null
+		if(img.nextElementSibling!=null){
+		//设置img的下一个兄弟元素的class为show
+			img.nextElementSibling.className="show";
+		}else{
+		//设置id为main下的第一个子元素的class为show
+			var ss=document.querySelector("#main>:first-child");
+			ss.className="show";
+		}
+	}	
+	var timer=setInterval(task,2000);
+	
+	var mm=document.getElementById("main");
+	//为id为slider的div绑定鼠标进入(mouseover)事件
+		mm.onmouseover=()=>{
+			clearInterval(timer);//停止定时器!
+			timer=null;	//清空timer
+		}	
+	 //为id为slider的div绑定鼠标移出(mouesout)事件
+		mm.onmouseout=()=>{
+			timer=setInterval(task,2000);
+		}
+	  //启动定时器,每隔3秒，自动调用一次task
+  </script>
+ </body>
+</html>

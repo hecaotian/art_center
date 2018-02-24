@@ -1,0 +1,56 @@
+	#main_floor3{
+		width:1450px;
+		height:570px;
+		position:relative;	
+		background-image:url("../images/index/b4bg.jpg");	
+	}
+	#main_floor3 h2 {
+		position: absolute;
+		top:50px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+	#main_floor3 .s_list{
+		width:9999px;	
+		position:relative;
+		top:0px;
+		left:0px;
+		transition:all .5s linear;
+	}
+	.s_list>div.designer{
+		width: 105px;
+		float: left;
+		text-align: center;		
+		margin: 30px 32px 10px 55px;
+	}
+	.show_list{
+		width:1000px;
+		height:198px;			
+		position:relative;
+		top:240px;
+		left:225px;
+		overflow:hidden;
+	}
+	/*左右按扭*/
+	.ar a.arleft{		
+		position:absolute;
+		top:55px;
+		left:-27px;
+		opacity:.7;
+		transition:all .5s linear;
+	}
+	.ar a.arright{
+		position:absolute;
+		top:55px;
+		right:-27px;
+		opacity:.7;
+		transition:all .5s linear;
+	}
+
+	.show_list:hover>.ar a.arright{
+		right:0px;
+	}
+	.show_list:hover>.ar a.arleft{
+		left:0px;
+	}	

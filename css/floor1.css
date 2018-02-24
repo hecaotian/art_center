@@ -1,0 +1,79 @@
+	#main_floor1{
+		position:relative;
+		width:1450px;
+		height:670px;
+		background-color:#DADBD8;		
+	}
+	#main_floor1 h2 {
+		position: absolute;
+		top:18px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+	#main_floor1>div.m_map{
+		width:1000px;
+		height:500px;
+		padding-top:29px;	
+		margin:0 auto;	
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		position: relative;
+		top:140px;
+		overflow:hidden;
+	}
+	.new_express{
+		width:166px;
+		height:399px;
+		padding:0px 2px;
+	}
+	.new_express>div h3{
+		font-weight: bolder;
+		color: rgb(90,160,36);
+		font-size:14px;
+	}
+	.new_express>div p{
+		font-size:12px;
+		line-height:18px;
+	}
+	.new_express:hover{
+		color: rgb(90,160,36);
+	}
+	.new_express:hover>.nex img{
+		transform:scale(1.05);
+		z-index:10;
+	}
+	.new_express>div span{
+		font-size:12px;	
+		font-family: Arial;
+		transition: all .3s;
+	}
+	.new_express:first-child,.new_express:nth-child(5){
+		position:relative;
+		top:30px;
+	}
+	.new_express:nth-child(2),.new_express:nth-child(4){
+		position:relative;
+		top:40px;
+	}
+	.m_map>div.ar .arleft{		
+		position:absolute;
+		top:230px;
+		left:-27px;
+		opacity:.7;
+		transition:all .5s linear;
+	}
+	.m_map>div.ar .arright{
+		position:absolute;
+		top:230px;
+		right:-27px;
+		opacity:.7;
+		transition:all .5s linear;
+	}
+	.m_map:hover>.ar .arright{
+		right:0px;
+	}
+	.m_map:hover>.ar .arleft{
+		left:0;
+	}

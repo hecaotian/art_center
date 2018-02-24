@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body style="overflow:scroll;overflow-x:hidden">
+    <div id="login_main">
+		<div class="login_logo">
+			<a><img src="images/index/logo2.png" alt=""></a>
+			<h2>|<a href="#">欢迎艺展中心登录</a></h2>
+		</div>
+        <svg id="s3" width="1400" height="600"></svg>
+		<form id="login_form">
+			<h1>welcome art-center</h1>
+              <div>
+                用户名:
+				<input type="text" id="uname"class="form-control" placeholder="请输入用户名" required />
+              </div>
+              <div>
+               密&nbsp;&nbsp;&nbsp;码:<input type="password" id="upwd"class="form-control" placeholder="请输入密码" required />
+              </div>
+              <div>
+                  <img src="data/00_yzm.php" title="换一张"id="yzm">
+                  <input type="text" id="code" placeholder="请输入验证码">
+              </div>
+              <div>
+                <a class="btn btn-default submit" id="btn" href="detail.html">&nbsp;登&nbsp;录&nbsp;</a>
+              </div>          
+		</form>
+    </div>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="Scripts/login.js"> </script>   
+</body>
+</html>

@@ -1,0 +1,56 @@
+	body{
+        padding: 0;
+        margin: 0;       
+    }
+    #my-menum {
+        padding-top: 15px;
+    }
+	.container .link{
+		margin:12px 3px 0 10px;
+		padding:3px 8px;
+		border:1px solid gray;
+		border-radius:3px;
+	}
+	.container .link:hover{
+		border:1px solid #5AA051;
+		background-color:#5AA051;     
+	}
+	.about_us{
+		border:1px solid red;
+		width:1440px;
+		height:500px;
+		margin-top:-20px;
+		background-image:url("../images/index/about.png");
+	}
+	.about_us>div.about_left{
+		width:400px;
+		height:480px;
+		border:1px solid orange;
+		margin:10px 0 0 200px ;
+		float:left;		
+	}
+	.about_us>div.about_left span{
+		font-size: 20px;
+		color: rgb(102,184,40);
+		display: block;
+		padding-bottom: 18px;
+		font-weight: bold;
+		margin-top:20px;
+	}
+	.about_us>div.about_right{
+		width:600px;
+		height:480px;
+		border:1px solid red;
+		margin:10px 100px 10px 50px;
+		float:left;
+		position: relative;
+	}
+
+	#v1{
+		position: relative;
+	}
+	.ctrl>img{
+		position: absolute;
+		left:45%;
+		top:45%;		
+	}

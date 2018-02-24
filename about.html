@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Generator" content="EditPlus®">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body>
+    <div id="about_main">
+        <div class="navbar navbar-default" style="width:100%">
+            <div class="container">
+                <!--第一部分logo-->
+                <a href="" data-toggle="collapse" class="navbar-brand">
+                    <img src="images/index/logo2.png" alt="">
+                </a>
+                <div class="navbar-header">
+                    <a href="" class="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                </div>
+                <!--第二部分，导航条折叠=导航菜单+按扭+超连接-->
+                <div id="my-menum" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav" id="dropdownMenu">
+                        <li class="dropdown">
+                            <a href="" data-toggle="dropdown">
+                                导购指南
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">分类搜索</a>
+                                </li>
+                                <li>
+                                    <a href="#">楼层导览</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">
+                                活动资讯
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">精彩活动</a>
+                                </li>
+                                <li>
+                                    <a href="#">艺展讲堂</a>
+                                </li>
+                                <li>
+                                    <a href="#">文博会场</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">
+                                设计方案
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">
+                                服务中心
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">品牌招商</a>
+                                </li>
+                                <li>
+                                    <a href="#">人才招聘</a>
+                                </li>
+                                <li>
+                                    <a href="#">联系我们</a>
+                                </li>
+                                <li>
+                                    <a href="#">交通指引</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">
+                                关于艺展
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">艺展介绍</a>
+                                </li>
+                                <li>
+                                    <a href="#">艺展动态</a>
+                                </li>
+                                <li>
+                                    <a href="#">DM杂志</a>
+                                </li>
+                                <li>
+                                    <a href="#">视频欣赏</a>
+                                </li>
+                                <li>
+                                    <a href="#">品牌声明</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="link vip">vip登记</a>
+                        </li>
+                        <li>
+                            <a href="" class="link language">中文/英文</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--内容-->
+        <div class="about_us">
+            <div class="about_left">
+                <span>艺展介绍</span>
+                <img src="images/index/about_log.png" alt="">
+
+            </div>
+            <div class="about_right">
+                <video id="v1" style="width:580px;height:480px;margin-left:10px;">
+                    <source src="res/linkPak.mp4">
+                </video>
+                <a class="ctrl">
+                    <img src="res/play.png"> 
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap-3.3.7-dist/js/jquery-3.2.1.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootlint.js"></script>
+    <script>
+		var ctrl = $(".ctrl");
+        var img = $(".ctrl>img");	
+        var ar = $(".about_right");
+	   ar.mouseover(function(){
+            img.css("display","block");
+        })
+        ar.mouseout(function(){
+           img.css("display","none");
+       })     
+       ctrl.on("click",function(e){
+           e.preventDefault();
+        var video=document.getElementById("v1");              
+           if(video.paused){            
+                video.play();
+                img.attr("src","res/pause.png");
+            }else{
+                video.pause();
+                img.attr("src","res/play.png");
+            }            
+       })
+       
+       
+       
+    </script>
+</body>
+
+</html>

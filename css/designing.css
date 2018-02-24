@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#design_main{
+    position: relative;
+}
+.box{
+   /*后续在获取盒子高度offsetHeight,此属性不包含margin
+   ,因此推荐使用padding*/
+   padding: 15px 0 0 15px; 
+   float: left;
+}
+.pic{
+    padding: 10px;
+    border-radius:5px;    
+    box-shadow: 0 0 5px rgb(105, 19, 19);
+}
+.pic img{
+    width:300px;
+    height:auto;
+}

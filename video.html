@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style lang="">
+        .main{
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+			display: none;
+        }
+		#video1{
+			display: none;
+			height: 100%;
+			width: 100%;
+		}
+		.btn {
+			border-radius: 10px;
+			background-color: #ce3249;
+			width: 100px;
+			text-align: center;
+			height: 30px;
+			line-height: 30px;
+			color: #fff;
+		}
+
+
+    </style>
+</head>
+<body>  
+    <div class="main">  
+        <video id="video1" style="width:580px;height:480px;" controls>
+            <source src="res/linkPak.mp4">
+        </video>
+    </div> 
+	<div class="btn">点击播放</div>
+    <script>
+        
+//		video.play();
+
+		function videoPlayer(){
+			var video = document.getElementById("video1");
+            var main = document.getElementsByClassName("main")[0];
+            var btn = document.getElementsByClassName("btn")[0];
+			console.log(btn);
+            btn.addEventListener('click',function(){				
+				main.style.display = "block";
+				video.style.display = "block";
+				video.play();
+			})
+        };
+		videoPlayer();
+    </script>
+</body>
+</html>

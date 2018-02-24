@@ -1,0 +1,109 @@
+ #details #content{
+		  height:2000px;
+	  }
+	#details div.thing_title{
+		height:60px;
+
+		background-color:#616161; 
+	}
+	.details_show{
+		width:1424px;
+		display:flex;
+		justify-content:center;
+		margin-top:15px;
+	}
+	
+	.bigImg img{
+		width:600px;
+		transition:all .3s linear;
+	}
+	.bigImg img:nth-child(2),.bigImg img:nth-child(3),
+	.bigImg img:nth-child(4),.bigImg img:nth-child(5)	
+	{
+		margin-left:15px;
+	}
+	.bigImg{
+		width:1800px;
+		height:350px;
+		margin:10px 10px 10px 15px;
+		box-sizing: border-box;
+		display:flex;
+		justify-content:space-between;
+		position: absolute;
+		z-index:1;		
+	}
+	  #details div.details_show .imgShow{
+		width:600px;
+		height:108px; 
+		display: flex;
+		justify-content: space-between;
+		transform:all 0.3s ease;
+		margin:0px 10px 10px 15px;
+		position: absolute;
+		top:380px;		
+	  }
+	#details div.details_show .imgShow>div img{
+	  border:1px solid transparent;}
+	#details div.details_show .imgShow>div:hover>img{
+		border:1px solid rgb(5, 60, 211);
+		box-shadow: -5px,-5px,10px, orange;
+	}
+	  #details div.details_show .imgText{
+		width:400px;
+		height:400px;
+		margin-left:50px;		
+	  }
+	   #details div.details_show .details_img{
+		width:630px;
+		height:500px;	
+		overflow: hidden;
+		position:relative;
+		border:1px solid green;			
+	  }	
+	#details div.details_show div.imgText .tList{
+		height:30px;
+		line-height:30px;
+		font-size:14px;			
+	}
+
+	.ar a.arleft{		
+		position:absolute;
+		z-index:100;
+		top:135px;
+		left:15px;
+		opacity:0;
+		transition:all .5s linear;
+	}
+	.ar a.arright{
+		z-index:100;
+		position:absolute;
+		top:135px;
+		right:16px;
+		opacity:0;
+		transition:all .5s linear;
+	}
+
+	.details_img:hover>.ar a.arright{
+		opacity:.7;
+	}
+	.details_img:hover>.ar a.arleft{
+		opacity:.7;
+	}
+/*	.imgText>div.tList{*/
+/*		border:1px solid red;*/
+/*	}*/
+	.imgText>div.tList span{
+		font-size:14px;	
+		padding-right:10px;
+		padding-left:8px;
+	}
+	.imgText>div.tList .thing-right{
+	    float: right;
+		width: 280px;
+		background-color:#EFEFEF;		
+		border-radius:3px;
+		outline :1px solid #fff;		
+	}
+	.imgText>div.tList span a:hover{
+		color:#80C34F;
+	}

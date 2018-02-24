@@ -1,0 +1,44 @@
+	/*弹性布局方式*/
+       #header-top,#first_list{
+           display: flex;  
+           justify-content:Center;		   
+       }	   
+	    #header-top{
+		height:80px;	
+		background-color:#EEE;
+	   }
+	   /*导航条中的下拉列表*/	   
+	   #first_list{ /*ul的定位*/
+		width:1000px;
+		height:80px;
+	   }
+	   #first_list>li{		
+			position: relative;
+			padding:0px 20px;
+			font-size:16px;		
+	   }
+	   /*导航条中的logo*/
+	   #header-top>a .img1{
+		padding:15px 0;
+	   }
+	   /*主导航条*/
+		#first_list li div.aabox{
+			height:80px;
+			line-height:80px;
+			border:1px solid red;
+			
+		}		
+		/*二级导航条*/
+		#first_list li div.abbox ul.shoplist>li {
+			height:30px;
+			line-height:30px;
+			text-align:center;
+			background-color:#FFF;
+			width:100px;	
+		}	
+		#first_list div.abbox{
+			position:relative;
+			top:0px;			
+		}		
+		
+	
